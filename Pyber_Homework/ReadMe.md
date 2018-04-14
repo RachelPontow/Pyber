@@ -254,6 +254,7 @@ lgnd = plt.legend(frameon = True, edgecolor = 'black')
 lgnd.legendHandles[0]._sizes = [75]
 lgnd.legendHandles[1]._sizes = [75]
 lgnd.legendHandles[2]._sizes = [75]
+plt.savefig("Pyber_Ride_Sharing.png")
 ```
 
 
@@ -272,17 +273,12 @@ explode = (0, 0.05,0)
 city_fares_df.plot(kind = "pie",y="Average Fares", labels=city_fares_df.index, colors=colors, explode=explode,autopct="%1.1f%%")
 plt.axis("equal")
 plt.title("% of Total Fares by City Type")
+
+plt.savefig("fares_by_city_type.png")
 ```
 
 
-
-
-    Text(0.5,1,'% of Total Fares by City Type')
-
-
-
-
-![png](output_6_1.png)
+![png](output_6_0.png)
 
 
 
@@ -296,17 +292,11 @@ explode = (0, 0.05,0)
 ride_df.plot(kind = "pie",y="Total Rides", labels=ride_df.index, colors=colors, explode=explode,autopct="%1.1f%%")
 plt.axis("equal")
 plt.title("% of Total Rides by City Type")
+plt.savefig("Rides_by_city_type.png")
 ```
 
 
-
-
-    Text(0.5,1,'% of Total Rides by City Type')
-
-
-
-
-![png](output_7_1.png)
+![png](output_7_0.png)
 
 
 
@@ -320,15 +310,9 @@ explode = (0, 0.05,0)
 driver_df.plot(kind = "pie",y="Total Drivers", labels=driver_df.index, colors=colors, explode=explode,autopct="%1.1f%%")
 plt.axis("equal")
 plt.title("% of Total Drivers by City Type")
+plt.savefig("drivers_by_city_type")
 ```
 
 
-
-
-    Text(0.5,1,'% of Total Drivers by City Type')
-
-
-
-
-![png](output_8_1.png)
+![png](output_8_0.png)
 
